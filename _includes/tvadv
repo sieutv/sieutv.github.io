@@ -1,0 +1,3 @@
+<video poster="{{site.asseturl}}/img/sieutv16x9.jpg" data-setup="{}" id="player0" class="video-js" controls preload="auto" width="100%">
+	<source src="{{site.dataurl}}/s0/{{include.key}}.m3u8" type='application/x-mpegurl'>
+</video>

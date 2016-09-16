@@ -1,0 +1,6 @@
+name: "SiuTV"
+subline: "fun for free"
+baseurl: "https://sieutv.github.io"
+dataurl: "/0data"
+asseturl: "/assets"
+permalink: /:categories/:title/
