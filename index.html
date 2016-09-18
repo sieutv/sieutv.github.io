@@ -20,12 +20,17 @@
 <script>var userip;</script>
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
 <script>
-document.write(userip);
-//window.location = "/livetv/"+rs.country.toLowerCase();
-$.getJSON("http://ipinfo.io/"+userip, function(data){
-$('#rsdata').html(JSON.stringify(data));
-alert('Success');
-});
+//document.write(userip);
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //document.getElementById("demo").innerHTML = this.responseText;
+	  window.location = "/livetv/"+this.responseText.toLowerCase();
+    }
+  };
+  xhttp.open("GET", "http://ipinfo.io/"+userip, true);
+  xhttp.send();
 </script>
 
 </body>
