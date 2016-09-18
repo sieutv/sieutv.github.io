@@ -21,13 +21,9 @@
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
 <script>
 //document.write(userip);
-var country_code = null;
-$.getJSON('http://ipinfo.io/' + userip, function(data){
-	//window.location = "/livetv/"+data.country.toLowerCase();
-    country_code = data.country.toLowerCase();
-    document.write(country_code);
-});
-
+    $.get("http://ipinfo.io/"+userip, function (rs) {
+		window.location = "/livetv/"+rs.country.toLowerCase();
+    }, "jsonp");
 </script>
 
 </body>
