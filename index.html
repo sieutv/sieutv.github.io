@@ -24,7 +24,7 @@
 var country_code = null;
 $.getJSON('http://ipinfo.io/' + userip, function(data){
 	//window.location = "/livetv/"+data.country.toLowerCase();
-    country_code = data.country;
+    country_code = data.country.toLowerCase();
     document.write(country_code);
 });
 
