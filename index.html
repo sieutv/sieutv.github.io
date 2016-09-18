@@ -2,10 +2,7 @@
 layout: page
 title: Welcome to SiuTV.
 ---
-{% include pagination_up %}
-<div class="text-center">
-{% for p in paginator.posts %}
-  {% include image %}
-{% endfor %}
-</div>
-{% include pagination_up %}
+<script>
+  var url="{{site.baseurl}}/".geoplugin_countryCode();
+  window.location.replace(url);
+</script>

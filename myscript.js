@@ -3,3 +3,4 @@ document.write('<script src="//cdn.firebase.com/js/client/2.4.2/firebase.js"></s
 document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>');
 document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>');
 document.write('<script src="//vjs.zencdn.net/5.11.6/video.js"></script>');
+document.write('<script src="//www.geoplugin.net/javascript.gp"></script>');
