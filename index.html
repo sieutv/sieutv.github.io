@@ -16,12 +16,12 @@
 <title>wWw.SieuTV.nEt</title>
 </head>
 <body>
-
+<script>var userip;</script>
+<script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
 <script>
-$.getJSON("http://www.geoplugin.net/json.gp?jsoncallback=?",
+$.getJSON("http://freegeoip.net/json/"+userip,
     function (data) {
-		//document.write(data.geoplugin_countryCode);
-		window.location = "/livetv/"+data.geoplugin_countryCode.toLowerCase();
+		window.location = "/livetv/"+data.country_code.toLowerCase();
     }
 );
 </script>
