@@ -3,12 +3,10 @@ layout: page
 title: Welcome to SiuTV.
 ---
 <script>
-jQuery.ajax( {
-  url: '//freegeoip.net/json/',
-  type: 'POST',
-  dataType: 'jsonp',
-  success: function(rs) {
-	window.top.location.href = 'http://sieutv.github.io/livetv/' + rs.country_code;
-  }
-} );
+$.getJSON("http://www.geoplugin.net/json.gp?jsoncallback=?",
+    function (data) {
+		//document.write(data.geoplugin_countryCode);
+		window.location = "/livetv/"+data.geoplugin_countryCode.toLowerCase();
+    }
+);
 </script>
