@@ -3,7 +3,8 @@ layout: page
 title: Welcome to SiuTV.
 ---
 <script>
-  var url="{{site.baseurl}}/livetv/".geoplugin_countryCode();
-  window.location.replace(url);
-  alert(url);
+$.get("http://ipinfo.io", function (response) {
+  window.location.replace("https://sieutv.github.io/livetv/"+response.country);
+}, "jsonp");
+
 </script>
