@@ -20,10 +20,10 @@
 <script>var userip;</script>
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
 <script>
-document.write(userip);
+//document.write(userip);
 $.getJSON('http://ipinfo.io/' + userip, function(data){
     //window.location = "/livetv/"+data.country.toLowerCase();
-	//document.write(data.country);
+	document.write(data.country.toLowerCase());
 });
 </script>
 
