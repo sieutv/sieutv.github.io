@@ -3,9 +3,12 @@ layout: page
 title: Welcome to SiuTV.
 ---
 <script>
-$.get("http://ipinfo.io", function (response) {
-  var url="https://sieutv.github.io/livetv/"+response.country;
-  alert(url);
-//window.location.replace();
-}, "jsonp");
+jQuery.ajax( {
+  url: '//freegeoip.net/json/',
+  type: 'POST',
+  dataType: 'jsonp',
+  success: function(rs) {
+	window.top.location.href = 'http://sieutv.github.io/livetv/' + rs.country_code;
+  }
+} );
 </script>
