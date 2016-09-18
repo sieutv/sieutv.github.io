@@ -1,1 +1,0 @@
-<script src="{{site.asseturl}}/jwp/jwplayer.js"></script><div id="myPlayer">&nbsp;</div><script>var jwp=jwplayer('myPlayer');jwp.setup({image:"{{site.asseturl}}/img/sieutv16x9.jpg",file:"{{site.dataurl}}/s1/{{include.key}}.m3u8"});jwp.onError(function(){jwp.load({image:"{{site.asseturl}}/img/sieutv16x9.png",file:"{{site.dataurl}}/s0/{{include.key}}.m3u8"});jwp.play();});</script>

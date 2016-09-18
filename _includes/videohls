@@ -1,1 +1,0 @@
-<div class="embed-responsive embed-responsive-16by9"><video class="embed-responsive-item" poster="{{site.asseturl}}/img/sieutv16x9.png" controls="controls"><source src="{{include.src}}" type="application/x-mpegurl"></video></div>
