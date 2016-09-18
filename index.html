@@ -21,10 +21,13 @@
 <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
 <script>
 //document.write(userip);
+var country_code = null;
 $.getJSON('http://ipinfo.io/' + userip, function(data){
-    //window.location = "/livetv/"+data.country.toLowerCase();
-	document.write(data.country.toLowerCase());
+	//window.location = "/livetv/"+data.country.toLowerCase();
+    country_code = data.country;
+    document.write(country_code);
 });
+
 </script>
 
 </body>
