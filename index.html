@@ -4,7 +4,8 @@ title: Welcome to SiuTV.
 ---
 <script>
 $.get("http://ipinfo.io", function (response) {
-  window.location.replace("https://sieutv.github.io/livetv/"+response.country);
+  var url="https://sieutv.github.io/livetv/"+response.country;
+  alert(url);
+//window.location.replace();
 }, "jsonp");
-
 </script>
