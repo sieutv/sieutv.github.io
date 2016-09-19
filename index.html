@@ -22,8 +22,11 @@
 <script>
 document.write(userip);
 document.write('Ccode:' + geoplugin_countryCode());
-
 </script>
-
+<script type="text/javascript">
+        $.getJSON('http://freegeoip.net/json/', function (location) {
+         alert('Your country code is ' + location.country_code);
+        });   
+</script>
 </body>
 </html>
