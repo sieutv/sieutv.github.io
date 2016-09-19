@@ -23,10 +23,13 @@
 document.write(userip);
 document.write('Ccode:' + geoplugin_countryCode());
 </script>
+<div id="ip"></div>
+<div id="country"></div>
 <script type="text/javascript">
-        $.getJSON('http://freegeoip.net/json/', function (location) {
-         alert('Your country code is ' + location.country_code);
-        });   
+$.get("http://ipinfo.io", function (rs) {
+    $("#ip").html("IP: " + rs.ip);
+    $("#country").html("Country: " + rs.country);
+}, "jsonp");
 </script>
 </body>
 </html>
