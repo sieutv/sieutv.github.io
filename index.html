@@ -9,15 +9,20 @@
 <meta name="author" content="binhbat">
 <link href="favicon.png" rel="apple-touch-icon" >
 <link href="favicon.png" rel="icon" >
-<link href="//getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="//getbootstrap.com/dist/js/bootstrap.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="http://www.geoplugin.net/javascript.gp"></script>
+<link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://www.geoplugin.net/javascript.gp?base_currency=EUR"></script>
 <title>wWw.SieuTV.nEt</title>
 </head>
 <body>
+<div id="rsdata"></div>
+<script>var userip;</script>
+<script src="https://l2.io/ip.js?var=userip"></script>
 <script>
-document.write("IP:"+geoplugin_request()+",ISO 2:"+geoplugin_countryCode()); 
+document.write(userip);
+document.write('Ccode:'+geoplugin_countryCode());
 </script>
+
 </body>
 </html>
